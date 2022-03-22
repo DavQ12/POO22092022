@@ -10,6 +10,8 @@ import ico.fes.componentes.Mouse;
 import ico.fes.componentes.Procesador;
 import ico.fes.componentes.Teclado;
 import ico.fes.herencia.Alumno;
+import ico.fes.herencia.Servidor;
+import ico.fes.herencia.polimorfismo.Perro;
 import javax.swing.JFrame;
 
 /**
@@ -53,7 +55,7 @@ public class ReutilizacionCodigo2209 {
         compu2.getRaton().setTipo("Touch");
         System.out.println(compu2);
         
-        System.out.println(".............");
+        System.out.println("............................................");
         Alumno alu1=new Alumno();
         alu1.setNombre("Angel");
         System.out.println(alu1);
@@ -61,6 +63,21 @@ public class ReutilizacionCodigo2209 {
         
         Alumno alu2=new Alumno("319102963", "ICO", "Angel QS", 18);
         System.out.println(alu2);
+        
+        System.out.println(".........Composición y herencia en la misma clase.............");
+        Servidor server = new Servidor();
+        System.out.println(server);
+        server.setNumeroTarjetaRed(2);
+        server.setMarca("HP");
+        System.out.println(server);
+        server.setRaton(new Mouse("LG", "Optico"));
+        System.out.println(server);
+        server.getRaton().setMarca("Logitech");//Primero debe crearse el objeto
+        System.out.println(server);
+        
+        System.out.println("............Ejemplo de polimorfismo..........");
+        Perro dog = new Perro("Bull dog ", "5 estrellas ", 4);
+        dog.emitirSonido();
         
     }
     
