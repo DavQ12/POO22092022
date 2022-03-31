@@ -11,6 +11,7 @@ import ico.fes.componentes.Procesador;
 import ico.fes.componentes.Teclado;
 import ico.fes.herencia.Alumno;
 import ico.fes.herencia.Servidor;
+import ico.fes.herencia.polimorfismo.Animal;
 import ico.fes.herencia.polimorfismo.Perro;
 import javax.swing.JFrame;
 
@@ -75,9 +76,12 @@ public class ReutilizacionCodigo2209 {
         server.getRaton().setMarca("Logitech");//Primero debe crearse el objeto
         System.out.println(server);
         
+        
         System.out.println("............Ejemplo de polimorfismo..........");
         Perro dog = new Perro("Bull dog ", "5 estrellas ", 4);
+        Animal animal1 = new Animal(4);
         dog.emitirSonido();
+        animal1.emitirSonido();
         
     }
     

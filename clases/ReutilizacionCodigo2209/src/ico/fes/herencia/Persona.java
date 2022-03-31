@@ -40,7 +40,7 @@ public class Persona {
     public String toString() {
         return "Persona{" + "nombre=" + nombre + ", edad=" + edad + '}';
     }
-    
+    //metodo de uso general
     public void dormir(){
         System.out.println(this. nombre + " esta dormido ...");
     }
