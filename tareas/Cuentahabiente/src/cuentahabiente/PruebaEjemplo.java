@@ -22,7 +22,7 @@ public class PruebaEjemplo {
        lista[3]=new Cuentahabiente(412388, "Alan", 60000.00f);
        lista[4]=new Cuentahabiente(512399, "Oliver", 12000.00f);
        
-       lista[3].retirarDinero(10000.00f);
+       
        
         for (Cuentahabiente cuentahabiente : lista) {
             System.out.println(cuentahabiente.evaluarCliente());

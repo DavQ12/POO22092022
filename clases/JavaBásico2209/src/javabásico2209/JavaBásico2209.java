@@ -5,6 +5,7 @@
 package javabásico2209;
 
 import java.awt.Color;
+import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
 /**
@@ -144,6 +145,49 @@ public class JavaBásico2209 {
         }
         
         
+        ArrayList<Alumno> grupo2209= new ArrayList<Alumno>();
+        grupo2209.add(new Alumno("9999999", 2, 9.0f));
+        grupo2209.add(new Alumno("8888889", 2, 8.0f));
+        grupo2209.add(new Alumno("7777777", 2, 7.0f));
+        grupo2209.add(new Alumno("6666666", 2, 6.0f));
+        grupo2209.add(new Alumno("5555555", 2, 5.0f));
+        
+        for (Alumno alumno : grupo2209) {
+            System.out.println(alumno);
+        }
+        
+        System.out.println("Add con indice(en la posicion que se indica)-------------------");
+        grupo2209.add(2, new Alumno("811111", 3, 9.9f));
+        
+        for (Alumno alumno : grupo2209) {
+            System.out.println(alumno);
+        }
+        
+        /*Alumno tmp = grupo2209.get(1);
+        System.out.println("Alumno index 1: "+tmp);*/
+        System.out.println("REMOVER---------------");
+        Alumno tmp2 =grupo2209.remove(3);
+        System.out.println("Se removio el index 3: "+tmp2);
+        
+        for (Alumno alumno : grupo2209) {
+            System.out.println(alumno);
+        }
+        
+        System.out.println("Remplazar el i-esimotermino---------------");
+        Alumno tmp3=grupo2209.set(0, new Alumno("44444444", 4, 4.4f));
+        System.out.println("El sacado es= " +tmp3);
+        
+        for (Alumno alumno : grupo2209) {
+            System.out.println(alumno);
+        }
+        
+        /*
+        //Excepciones
+        try {
+            System.out.println("Excepciones");
+            System.out.println(grupo2209.get(20));
+        } catch (Exception e) {
+        }
+        */
     }
-    
 }
