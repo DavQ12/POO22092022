@@ -19,6 +19,7 @@ public class JavaGraficoMain {
         //VentanaVersion2 ventana2=new VentanaVersion2();
         VentanaSwing vs=new VentanaSwing();
         System.out.println(System.getProperty("user.dir"));
+        
     }
             
 }
