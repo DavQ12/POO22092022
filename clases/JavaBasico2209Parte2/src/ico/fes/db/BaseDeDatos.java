@@ -12,6 +12,7 @@ import java.sql.*;
  */
 public class BaseDeDatos {
     
+    
 
     String dbPath;
     private Connection conexion;
@@ -38,6 +39,7 @@ public class BaseDeDatos {
     }
 
     public Connection getConexion() {
+        
         return conexion;
     }
 
